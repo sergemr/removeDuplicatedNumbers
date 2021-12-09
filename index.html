@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script>
+               const removeDuplicated = nums =>{
+                console.log('here', nums);
+              if(nums.length === 0) return 0;
+              let i=0;
+              let j=1;
+              console.log('here', nums);
+              while(j < nums.length){
+                  if(nums[j] !== nums[i]){
+                        i++;
+                        nums[i]= nums[j];
+                        j++
+                  }else{
+                        j++
+                  }
+              };
+              console.log('here sorted', nums);
+                  return i + 1;
+               }
+
+              console.log(removeDuplicated([0,1,1,2,3,3,3,4])) 
+
+    </script>
+  </head>
+  <body></body>
+</html>
